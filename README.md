@@ -24,6 +24,13 @@ Este código tem como objetivo responder ao desafio enviado pelo [Itaú-Unibanco
 	
 ### Requisitos
 
+```
 JAVA JDK_1.8
 
-Baixar o projeto Spring Boot + JPA + WEB + H2 - [GitHub](https://github.com/paullohdiniz/projeto-reativo-pos.git)	
+Baixar o projeto Spring Boot + JPA + WEB + H2 - [GitHub](https://github.com/paullohdiniz/backend-challenge-itau.git)	
+
+Roda o mvn clean install
+
+Subi a aplicação através do comando mvn spring-boot:run
+
+```

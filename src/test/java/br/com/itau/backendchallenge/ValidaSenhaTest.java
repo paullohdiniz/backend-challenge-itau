@@ -5,6 +5,7 @@ import br.com.itau.backendchallenge.service.ValidaSenhaServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ValidaSenhaTest {
@@ -18,6 +19,18 @@ public class ValidaSenhaTest {
     }
     @Test
     public void validaSenhaCorreta(){
-        assertTrue(validaSenhaService.isValid("teste"));
+        assertTrue(validaSenhaService.isValido("AbTp9-fok"));
+    }
+
+    @Test
+    public void validaSenhaInCorreta(){
+        assertFalse(validaSenhaService.isValido(""));
+        assertFalse(validaSenhaService.isValido("aa"));
+        assertFalse(validaSenhaService.isValido("ab"));
+        assertFalse(validaSenhaService.isValido("AAAbbbCc"));
+        assertFalse(validaSenhaService.isValido("AbTp9!foo"));
+        assertFalse(validaSenhaService.isValido("AbTp9!foo"));
+        assertFalse(validaSenhaService.isValido("AbTp9 fok"));
+        assertFalse(validaSenhaService.isValido("AbTp9!foA"));
     }
 }

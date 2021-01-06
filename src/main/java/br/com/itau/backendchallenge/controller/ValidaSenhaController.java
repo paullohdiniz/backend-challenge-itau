@@ -16,7 +16,7 @@ public class ValidaSenhaController {
     private ValidaSenhaService validaSenhaService;
 
     @GetMapping(value = "/{senha}")
-    public Boolean validasenha(@PathVariable String senha){
-        return validaSenhaService.isValid(senha);
+    public boolean validaSenha(@PathVariable final String senha){
+        return validaSenhaService.isValido(senha);
     }
 }

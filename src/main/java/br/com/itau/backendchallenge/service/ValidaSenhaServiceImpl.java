@@ -1,5 +1,8 @@
 package br.com.itau.backendchallenge.service;
 
+import br.com.itau.backendchallenge.repository.ValidaSenhaRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import java.util.HashSet;
 import java.util.regex.Matcher;
@@ -12,6 +15,9 @@ public class ValidaSenhaServiceImpl implements ValidaSenhaService {
             + "(?=.*[a-z])(?=.*[A-Z])"
             + "(?=.*[!@#$%^&*()+-])"
             + "(?=\\S+$).{9}$";
+
+    @Autowired
+    public ValidaSenhaRepository validaSenhaRepository;
 
     @Override
     public boolean isValido(final String senha) {
@@ -41,5 +47,10 @@ public class ValidaSenhaServiceImpl implements ValidaSenhaService {
         }
 
         return false;
+    }
+
+    @Override
+    public String findByDescricao(String descricao) {
+        return validaSenhaRepository.findByDescricao(descricao);
     }
 }

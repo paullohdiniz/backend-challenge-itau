@@ -8,8 +8,8 @@ Este código tem como objetivo responder ao desafio enviado pelo [Itaú-Unibanco
 
 1º) Criação de API que valida senha
 
---- Linguagem JAVA
---- Framework Spring
+- Linguagem JAVA
+- Framework Spring
 
 ```
   .   ____          _            __ _ _

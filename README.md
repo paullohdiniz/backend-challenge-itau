@@ -60,3 +60,8 @@ Subi a aplicação através do comando mvn spring-boot:run
    
    - Criação de uma simulação de Teste Integrado, mocando o acesso ao banco que não se fez necessário para este exemplo.
 ```
+
+### Conclusão
+
+Os testes inferidos pelo Teste Unitário foram realizados com sucesso, bem como uma sequência de teste direto na API utilizando as chamadas do próprio browser.
+

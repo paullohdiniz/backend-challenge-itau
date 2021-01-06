@@ -24,7 +24,7 @@ Este código tem como objetivo responder ao desafio enviado pelo [Itaú-Unibanco
 
 2º) Criação de Teste Unitário
 
-2º) Criação de Teste Integrado
+3º) Criação de Teste Integrado
 	
 ### Requisitos
 
